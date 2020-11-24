@@ -19,11 +19,16 @@ p {
 }
 
 .contents {
-  max-width: 1175px;
-  margin: 0px auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  max-width: 1200px;
+  margin: 50px auto 0;
   width: 100%;
   height: 100%;
   min-height: 990px;
+}
+
+.home {
+  opacity: 0.5;
 }
 
 .wrapper {
@@ -32,6 +37,7 @@ p {
   padding: 20px;
   margin: 10px;
   display: flex;
+  background-color: white;
 }
 
 .wrapper img {
@@ -43,19 +49,35 @@ p {
 
 .description {
   width: 42%;
-  margin: 0 0 0 25px;
-  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0 0 0 30px;
 }
 
 .line {
   margin: 30px 0 0 0;
 }
 
-.line > .block:nth-child(1) {
+.block:nth-child(1) {
   padding: 30px 0 0 0;
   border-top: 1px solid #d5d5d5;
 }
 
 .line > .block:nth-child(2n + 3) {
   margin-top: 30px;
+}
+
+.high {
+  color: red;
+}
+
+#root .slick-prev:before {
+  margin-left: -35px;
+}
+
+#root .slick-prev:before,
+#root .slick-next:before {
+  font-size: 50px;
+}
+
+#root .react-tabs__tab-panel {
+  background-color: #e9eef1;
 }

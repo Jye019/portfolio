@@ -16,6 +16,8 @@ const ProjectAuth = () => {
             <div className="block indent">
               <p>- 필터에 따른 검색 쿼리 구현 </p>
               <p>- 자음 및 단어 검색 함수 구현</p>
+              <p className="indent">&gt; 공백 처리</p>
+              <p className="indent">&gt; 쌍자음 처리</p>
             </div>
           </div>
         </div>

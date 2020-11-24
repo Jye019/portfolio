@@ -1,9 +1,10 @@
 import React from 'react'
+import home from '../image/home.jpg'
 
 const Home = () => {
   return (
-    <div className="contents">
-      <div>HOME</div>
+    <div className="home content">
+      <img src={home} alt="sample" width="100%" />
     </div>
   )
 }
