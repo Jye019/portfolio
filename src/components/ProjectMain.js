@@ -1,13 +1,13 @@
 import React from 'react'
-import img9 from '../image/img9.jpg'
-import img11 from '../image/img11.jpg'
+import img9 from '../image/img9.png'
+import img11 from '../image/img11.png'
 
 const ProjectMain = () => {
   return (
     <div>
       <div className="wrapper">
-        <img src={img9} alt="sample" />
         <img src={img11} alt="sample" />
+        <img src={img9} alt="sample" />
         <div className="description">
           <h1>버거보고</h1>
           <h3>국내 5사 햄버거에 대한 후기 및 정보 제공 서비스</h3>
