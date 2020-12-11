@@ -11,13 +11,13 @@ const Menu = () => (
       <Tab>PROJECT</Tab>
       <Tab>ABOUT</Tab>
     </TabList>
-    <TabPanel>
+    <TabPanel style={{ padding: 0, overflow: 'hidden' }}>
       <Home />
     </TabPanel>
-    <TabPanel>
+    <TabPanel style={{ overflow: 'auto' }}>
       <Project />
     </TabPanel>
-    <TabPanel style={{ backgroundColor: 'white' }}>
+    <TabPanel style={{ overflow: 'auto' }}>
       <About />
     </TabPanel>
   </Tabs>
