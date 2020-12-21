@@ -17,7 +17,7 @@ const Menu = () => (
     <TabPanel style={{ overflow: 'auto' }}>
       <Project />
     </TabPanel>
-    <TabPanel style={{ overflow: 'auto' }}>
+    <TabPanel style={{ minHeight: '1000px' }}>
       <About />
     </TabPanel>
   </Tabs>

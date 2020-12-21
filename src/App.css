@@ -103,7 +103,7 @@
   .home .contents > div {
     position: absolute;
     font-size: 1.5em;
-    top: 5%;
+    top: 55%;
     right: 10%;
   }
 
@@ -251,5 +251,4 @@ p {
 .react-tabs__tab-panel {
   background-color: #f6f6f6;
   padding: 50px;
-  display: flow-root;
 }
