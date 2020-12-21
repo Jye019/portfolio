@@ -4,7 +4,7 @@ import img11 from '../image/img11.jpg'
 
 const ProjectMain = () => {
   return (
-    <div>
+    <div className="main">
       <div className="wrapper">
         <img src={img9} alt="sample" />
         <img src={img11} alt="sample" />

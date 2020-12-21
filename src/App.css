@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
 @media only screen and (min-width: 961px) {
-  .App {
-    height: 720px;
-  }
   .home {
-    min-height: 590px;
+    background-size: 100%;
   }
 
-  .home > .contents {
+  .App .home .contents {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .home .contents > div {
+    position: absolute;
     font-size: 2.5em;
-    left: 15%;
-    transform: translateY(95%);
+    top: 30%;
+    right: 10%;
   }
 
   .slick-list {
@@ -32,21 +36,21 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 960px) {
-  .App {
-    height: 650px;
-  }
-
   .home {
-    min-height: 480px;
-    width: 100%;
-    height: 0;
-    padding-top: calc (300 / 1000 * 100%);
+    background-size: cover;
   }
 
-  .home > .contents {
+  .App .home .contents {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .home .contents > div {
+    position: absolute;
     font-size: 1.8em;
-    left: 15%;
-    transform: translateY(90%);
+    top: 25%;
+    right: 15%;
   }
 
   .slick-slider,
@@ -86,6 +90,23 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .home {
+    background-size: cover;
+  }
+
+  .App .home .contents {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .home .contents > div {
+    position: absolute;
+    font-size: 1.5em;
+    top: 5%;
+    right: 10%;
+  }
+
   .App .react-tabs__tab {
     padding: 0 20px 20px;
   }
@@ -94,28 +115,8 @@
     padding: 50px 56px;
   }
 
-  .App .home > .contents {
-    font-size: 0.7em;
-    left: 15%;
-    transform: translateY(40%);
-  }
-
   .App #react-tabs-5 {
     font-size: 0.7em;
-  }
-
-  .App {
-    height: 380px;
-  }
-
-  .home {
-    min-height: 195px;
-  }
-
-  .home > .contents {
-    font-size: 0.7em;
-    left: 15%;
-    transform: translateY(80%);
   }
 
   .slick-slider,
@@ -154,6 +155,21 @@
   }
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root,
+.App,
+.react-tabs,
+.react-tabs__tab-panel,
+.home {
+  height: 100%;
+}
+
 div:active,
 div:focus {
   outline: none;
@@ -184,7 +200,8 @@ p {
 .home {
   opacity: 0.5;
   background-image: url('./image/home.jpg');
-  background-size: 100%;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
 }
 
