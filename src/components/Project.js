@@ -4,6 +4,7 @@ import Main from './ProjectMain'
 import Auth from './ProjectAuth'
 import Filter from './ProjectFilter'
 
+// eslint-disable-next-line
 const Project = () => {
   const settings = {
     dots: true,
@@ -13,12 +14,14 @@ const Project = () => {
     slidesToScroll: 1,
   }
   return (
-    <div className="contents">
-      <Slider {...settings}>
-        <Main />
-        <Auth />
-        <Filter />
-      </Slider>
+    <div className="project">
+      <div className="contents">
+        <Slider {...settings}>
+          <Main />
+          <Auth />
+          <Filter />
+        </Slider>
+      </div>
     </div>
   )
 }
